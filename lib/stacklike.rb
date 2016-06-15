@@ -13,3 +13,5 @@ module DataStructure
 		end
 	end
 end
+# Run 'Stacklike.ancestors' to see order of seach across modules and classes
+
