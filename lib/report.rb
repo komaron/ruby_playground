@@ -14,7 +14,7 @@ class B
 	end
 end
 
-# The object below will recieve the message some_method where will
+# The object below will recieve the message some_method which will
 # first find the method from the corresponding class B and execute
 # until it see's super which it will then look for the similar method
 # in Module A and execute it then back to finish the method in Class B
