@@ -34,7 +34,7 @@ end
 # Example of a singleton method
 # Declare x number of tickets and set prices for each
 # After passing the x number of values the event for the highest
-# price will be returned
+# price will be returned.
 def Ticket.most_expensive(*tickets)
 	ticket = tickets.max_by(&:price)
 	ticket.event
