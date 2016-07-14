@@ -49,5 +49,26 @@ class String
     self.gsub!(/\s+/,"")
     return self == self.reverse
   end
+
+  # One Away: Given two strings write a function to check if they are one edit (or zero edits) away.
+  def one_away?(string)
+    return true if self == string
+    if (self.length - string.length).abs > 1
+      return false
+    elsif (self.length - string.length).abs == 0
+      string_one = self.split("")
+      string_two = string.split("")
+      hash = Hash.new(0)
+
+      string_one.zip(string_two).each do |i, j|
+        if !(i==j)
+          hash['edit'] +=1
+        end
+      end
+     hash['edit'] == 1 ? true : false
+    else
+      raise NotImplementedError
+    end
+  end
 end
 
