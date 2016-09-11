@@ -1,4 +1,5 @@
 load 'other.rb'
+
 class Ticket < Other
 	# Constant
 	EVENTS = %w(Movie Play Book Other)
