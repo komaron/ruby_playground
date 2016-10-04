@@ -1,17 +1,17 @@
 # An example of using super method
 module A
-	def some_method
-		puts "I am coming from Module A"
-	end
+  def some_method
+    puts "I am coming from Module A"
+  end
 end
 
 class B
-	include A
-	def some_method
-		puts "I am in Class B"
-		super
-		puts "Im back in Class B"
-	end
+  include A
+  def some_method
+    puts "I am in Class B"
+    super
+    puts "Im back in Class B"
+  end
 end
 
 # The object below will recieve the message some_method which will
